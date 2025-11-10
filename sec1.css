@@ -1,0 +1,152 @@
+.sec1 {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    gap: 60px;
+}
+
+.sec1-left {
+    margin-left: 100px;
+}
+
+.sec1-left img {
+    width: 200px;
+    border: 50%;
+}
+
+.sec1-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sec1-right-span1 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 50px;
+    color: darkorange;
+}
+
+.sec1-right-span2 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sec1-right-social {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+    width: 90%;
+}
+
+.sec1-right-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.sec1-right-btn a {
+    text-decoration: none;
+}
+
+.sec1-right-btn> :nth-child(1) {
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.sec1-right-btn> :nth-child(1):hover {
+    background-color: black;
+    color: white;
+
+}
+
+.sec1-right-btn> :nth-child(2) {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.sec1-right-btn> :nth-child(2):hover {
+    background-color: darkorange;
+    color: white;
+    border-color: darkorange;
+}
+
+.sec1-right-social {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+
+}
+
+.sec1-right-social i {
+    width: 30px;
+    transition: all 0.5s ease;
+}
+
+.sec1-right-social i:hover {
+    transform: scale(0.9);
+}
+/* Responsive Tablet */
+@media(max-width:1024px) {
+    .sec1 {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+    .sec1-left {
+        margin-left: 0px;
+    }
+    .sec1-left img{
+        width: 450px;
+    }
+    .sec1-right {
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    p {
+        text-align: center;
+        width: 80%;
+    }
+
+    
+}
+/* Respnsive Mobile */
+@media(max-width:767px) {
+    .sec1 {
+        flex-direction: column;
+    }
+
+    .sec1-right {
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p {
+        text-align: center;
+    }
+    .sec1-left{
+        margin-top: 50px;
+    }
+    .sec1-left img{
+        width: 300px;
+    }
+}
